@@ -1,0 +1,23 @@
+.piePagina{
+    width: 100%;
+    // grid-area: pie;
+    background-color: #354f52;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    div{
+        font-size: 12px;/* Tamaño para smartphone, aumentar en mquery*/
+        color: rgb(161, 160, 160);
+        padding: 1px;
+        @media (max-width:450px){
+            font-size: 8px;
+            text-transform: uppercase;
+        }
+    }
+ }
+ .piePagina--absoluta{
+    position: absolute;
+    bottom: 0px;
+}

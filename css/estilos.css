@@ -1,0 +1,647 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  background-color: #f1faee;
+  position: relative;
+}
+
+.body-index {
+  background-image: url(../multimedia/coloniaFaro.jpg);
+}
+
+.contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.cajasSitios {
+  width: 90%;
+  background-color: rgba(132, 169, 140, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  border-radius: 8px;
+  margin: 10px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.cajasSitios img {
+  width: 100%;
+  height: auto;
+}
+
+.cajasSitios h3 {
+  width: 100%;
+  color: #f1faee;
+  background-color: #457b9d;
+  padding: 3px;
+  margin-bottom: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.cajasSitios:hover {
+  -webkit-box-shadow: 1px 1px 10px 1px rgba(69, 123, 157, 0.8);
+          box-shadow: 1px 1px 10px 1px rgba(69, 123, 157, 0.8);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.grillaCajasSitios {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  /* ajustar menos columnas en mquery*/
+  justify-items: center;
+}
+
+@media (max-width: 1000px) and (min-width: 671px) {
+  .grillaCajasSitios {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 670px) {
+  .grillaCajasSitios {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.contenedor-carrusel {
+  width: 90%;
+  margin: 10px auto;
+}
+
+@media (max-width: 670px) {
+  .contenedor-carrusel {
+    margin: 0 auto;
+    width: 98%;
+  }
+}
+
+.carrusel-fondo {
+  padding: 5px;
+  background-color: rgba(241, 250, 238, 0.8);
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+.carrusel-fondo .carrusel-fondo__etiqueta {
+  color: #457b9d;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 750px) {
+  .carrusel-fondo .carrusel-fondo__etiqueta {
+    font-size: 18px;
+  }
+}
+
+.carrusel-fondo .carrusel-fondo__parrafo {
+  color: #457b9d;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 750px) {
+  .carrusel-fondo .carrusel-fondo__parrafo {
+    font-size: 16px;
+  }
+}
+
+.margen-arriba {
+  margin-top: 50px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header-bgc {
+  background-color: #457b9d;
+}
+
+.menu-desplegar, .menu-cerrar {
+  color: #f1faee;
+  display: none;
+}
+
+.header-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  position: relative;
+}
+
+.header-flex .header-flex__logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  color: #f1faee;
+}
+
+.header-flex .header-flex__logo:hover {
+  color: yellow;
+  text-shadow: 1px 1px 10px yellow;
+}
+
+.header-flex .header-flex__nav-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #457b9d;
+}
+
+.header-flex .header-flex__nav-ul .header-flex__link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 4px;
+  height: 100%;
+  color: #f1faee;
+}
+
+.header-flex .header-flex__nav-ul .header-flex__link:hover {
+  border-radius: 8px;
+  color: yellow;
+}
+
+@media (min-width: 801px) {
+  .header-flex .header-flex__nav-ul .header-flex__link:hover {
+    text-shadow: 1px 1px 10px yellow;
+  }
+}
+
+@media (max-width: 800px) {
+  .menu-desplegar, .menu-cerrar {
+    display: block;
+  }
+  .barraNav {
+    position: absolute;
+    top: -500%;
+  }
+  .barraNav .header-flex__nav-ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .barraNav:target {
+    top: 0;
+    margin: 0;
+    width: 99%;
+    -webkit-transition: top 0.5s ease-in;
+    transition: top 0.5s ease-in;
+  }
+}
+
+.body-index {
+  height: 100%;
+  width: 100%;
+  background-image: url(../multimedia/coloniaSmartphone2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.claseMain {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 70%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.claseMain .claseMain__p {
+  width: 60%;
+  margin: 30px;
+  background-color: rgba(31, 33, 36, 0.5);
+  padding: 20px;
+  color: #dad6d8;
+  font-size: 32px;
+  border-radius: 10px;
+}
+
+@media (max-width: 650px) {
+  .claseMain .claseMain__p {
+    font-size: 26px;
+  }
+}
+
+.claseMain .claseMain__p .claseMain__strong {
+  color: #dad6d8;
+  font-size: 32px;
+}
+
+@media (min-width: 650px) {
+  .body-index {
+    background-image: url(../multimedia/coloniaFaro.jpg);
+  }
+}
+
+.grilla-playas {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.grilla-playas article {
+  background-color: rgba(132, 169, 140, 0.3);
+  width: 45%;
+  min-width: 470px;
+  max-height: 300px;
+  margin: 20px;
+  padding: 5px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.grilla-playas article div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.grilla-playas article p {
+  text-align: justify;
+  margin: 5px;
+}
+
+.grilla-playas h3 {
+  width: 100%;
+  color: #f1faee;
+  background-color: #457b9d;
+  padding: 3px;
+  margin-bottom: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.piePagina {
+  width: 100%;
+  background-color: #354f52;
+  opacity: 0.8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.piePagina div {
+  font-size: 12px;
+  /* Tamaño para smartphone, aumentar en mquery*/
+  color: #a1a0a0;
+  padding: 1px;
+}
+
+@media (max-width: 450px) {
+  .piePagina div {
+    font-size: 8px;
+    text-transform: uppercase;
+  }
+}
+
+.piePagina--absoluta {
+  position: absolute;
+  bottom: 0px;
+}
+
+.cajaPrueba {
+  width: 220px;
+  height: auto;
+  border: 1px solid;
+}
+
+.cajaPrueba .boxImagen {
+  position: relative;
+  width: 220px;
+  height: 180px;
+  overflow: hidden;
+}
+
+.cajaPrueba .boxImagen .imagen1 {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+.cajaPrueba .boxImagen .imagen2 {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cajaPrueba .boxImagen:hover .imagen2 {
+  opacity: 1;
+}
+
+.boxTresFotos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 900px;
+  height: 50vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: black;
+}
+
+.boxTresFotos .imagen1 {
+  width: 33%;
+  overflow: hidden;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.boxTresFotos .imagen1:hover {
+  width: 100%;
+}
+
+.boxTresFotos .imagen2 {
+  width: 33%;
+  overflow: hidden;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.boxTresFotos .imagen2:hover {
+  width: 100%;
+}
+
+.boxTresFotos .imagen3 {
+  width: 33%;
+  overflow: hidden;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.boxTresFotos .imagen3:hover {
+  width: 100%;
+}
+
+.miCarrusel {
+  width: 70%;
+  height: 60vh;
+  -webkit-animation-name: carrusel;
+          animation-name: carrusel;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  background-size: cover;
+}
+
+@-webkit-keyframes carrusel {
+  0% {
+    background-image: url(../multimedia/foto1.jpg);
+  }
+  33% {
+    background-image: url(../multimedia/foto2.jpg);
+  }
+  66% {
+    background-image: url(../multimedia/foto3.jpg);
+  }
+}
+
+@keyframes carrusel {
+  0% {
+    background-image: url(../multimedia/foto1.jpg);
+  }
+  33% {
+    background-image: url(../multimedia/foto2.jpg);
+  }
+  66% {
+    background-image: url(../multimedia/foto3.jpg);
+  }
+}
+
+/* Colores
+    Azul oscuro 2f3e46  47, 62, 70
+                354f52  53, 79, 82
+                52796f  82, 121, 111
+                84a98c  132, 169, 140
+                cad2c5  202, 210, 197
+*/
+/* PAGINA DE HOTELES Y GASTRONOMIA*/
+.cajas-cartas {
+  width: 30%;
+  margin: 10px auto 0 10px;
+  background-color: rgba(132, 169, 140, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5px;
+  /* border: 2px solid #354f52; */
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 950px) {
+  .cajas-cartas {
+    width: 45%;
+  }
+}
+
+@media (max-width: 590px) {
+  .cajas-cartas {
+    width: 98%;
+  }
+}
+
+.cajas-cartas img {
+  width: 100%;
+  height: auto;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.cajas-cartas p {
+  width: 100%;
+}
+
+.cajas-cartas h3 {
+  width: 100%;
+  color: #f1faee;
+  background-color: #457b9d;
+  padding: 3px;
+  margin-bottom: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.marginVinieta {
+  margin-left: 20px;
+}
+
+.grilla-cartas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+/* CIUDAD */
+.contenedor-parrafo {
+  width: 560px;
+}
+
+.margen-izq {
+  margin-left: 10px;
+}
+
+/* PLAYAS */
+/* CONTACTO */
+.labelLarga {
+  display: inline;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 15px auto;
+  padding: 10px;
+  border: 2px solid #354f52;
+  border-radius: 8px;
+  width: 320px;
+}
+
+form label {
+  display: inline-block;
+  width: 85px;
+}
+
+form textarea {
+  width: 285px;
+  resize: none;
+}
+
+form * {
+  font-size: 16px;
+}
+
+.posicion-absoluta {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+/* media querys */
+/*# sourceMappingURL=estilos.css.map */

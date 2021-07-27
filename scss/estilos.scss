@@ -1,0 +1,184 @@
+@import "general";
+// @import "estiloBEM";
+@import "sitios";
+@import "header";
+@import "index";
+@import "playas";
+@import "piePagina";
+@import "prueba";
+
+
+/* Colores
+    Azul oscuro 2f3e46  47, 62, 70
+                354f52  53, 79, 82
+                52796f  82, 121, 111
+                84a98c  132, 169, 140
+                cad2c5  202, 210, 197
+*/
+// .body-index{
+//     height: 100%;
+//     width: 100%;
+//     background-image: url(../multimedia/coloniaSmartphone2.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
+// .claseMain{  
+//     height: auto;
+//     display: flex;
+//     flex-direction: row;
+//     height: 70%;
+//     align-items: flex-end ;
+//     justify-content: flex-end;
+//     .claseMain__p{
+//         width: 60%;
+//         margin:30px;
+//         background-color:rgba(31, 33, 36, 0.5) ;
+//         padding: 20px;
+//         color: rgb(218, 214, 216);
+//         font-size: 32px;
+//         border-radius: 10px;
+//         @media(max-width:650px){
+//             font-size: 26px;
+//         }
+//     .claseMain__strong{
+//         color: rgb(218, 214, 216);
+//         font-size: 32px;
+//     }
+//     }
+// }
+
+/* PAGINA DE HOTELES Y GASTRONOMIA*/
+
+.cajas-cartas{
+    width: 30%;
+    margin: 10px auto 0 10px;
+    @media (max-width:950px){
+        width: 45%;
+    }
+    @media (max-width:590px){
+        width: 98%;
+    }
+    background-color: rgba(132, 169, 140,0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    /* border: 2px solid #354f52; */
+    
+    border-radius: 8px;
+    // max-width: 270px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+    img{
+        width: 100%;
+        height: auto;
+        justify-self: center;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    p{
+        // max-width: 290px;
+        width: 100%;
+    }
+    h3{
+        width: 100%;
+        color: $colorClaro;
+        background-color: $colorOscuro;
+        padding: 3px;
+        margin-bottom: 0;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+}
+.marginVinieta{
+    margin-left: 20px;
+}
+.grilla-cartas{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: initial;
+    align-items: stretch;
+}
+
+/* CIUDAD */
+.contenedor-parrafo{
+    width: 560px;
+}
+.margen-izq{
+    margin-left: 10px;
+}
+
+/* PLAYAS */
+// .grilla-playas{
+//     width: 100%;
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+    
+//     article{
+//         background-color: rgba(132, 169, 140, 0.3);
+//         width: 45%;
+//         min-width: 470px;
+//         max-height: 300px;
+//         margin: 20px;
+//         padding: 5px;
+//         box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+//         border-radius: 8px;
+//         div{
+//             display: flex;
+//             flex-flow: row nowrap;
+//         }
+//         p{
+//             text-align: justify;
+//             margin: 5px;
+//         }
+//     }
+//     h3{
+//         width: 100%;
+//         color: $colorClaro;
+//         background-color: $colorOscuro;
+//         padding: 3px;
+//         margin-bottom: 0;
+//         border-top-left-radius: 5px;
+//         border-top-right-radius: 5px;
+//         // color: whitesmoke;
+//         // background-color: rgb(53, 79, 82);
+//         // padding: 3px;
+//         // border-top-left-radius: 5px;
+//         // border-top-right-radius: 5px;
+//     }
+// }
+
+/* CONTACTO */
+
+.labelLarga{
+    display: inline;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    padding: 10px;
+    border: 2px solid #354f52;  
+    border-radius: 8px;  
+    width: 320px;
+    label{
+        display: inline-block;
+        width: 85px;
+    }
+    textarea {
+        width: 285px;
+        resize: none;
+    }
+
+} 
+form *{
+    font-size: 16px;
+}
+.posicion-absoluta{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+/* media querys */

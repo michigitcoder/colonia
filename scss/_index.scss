@@ -1,0 +1,37 @@
+.body-index{
+    height: 100%;
+    width: 100%;
+    background-image: url(../multimedia/coloniaSmartphone2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.claseMain{  
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    align-items: flex-end ;
+    justify-content: flex-end;
+    .claseMain__p{
+        width: 60%;
+        margin:30px;
+        background-color:rgba(31, 33, 36, 0.5) ;
+        padding: 20px;
+        color: rgb(218, 214, 216);
+        font-size: 32px;
+        border-radius: 10px;
+        @media(max-width:650px){
+            font-size: 26px;
+        }
+    .claseMain__strong{
+        color: rgb(218, 214, 216);
+        font-size: 32px;
+    }
+    }
+}
+
+@media (min-width: 650px){
+    .body-index{
+        background-image: url(../multimedia/coloniaFaro.jpg);
+    }
+}

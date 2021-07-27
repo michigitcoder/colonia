@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;  
+}
+
+// $colorClaro: #cad2c5;
+$colorClaro: #f1faee;
+// $colorClaro: #a5a58d;
+// $colorOscuro: #2f3e46;
+$colorOscuro: #457b9d;
+// $colorOscuro: #ffe8d6;
+$colorBotones: $colorOscuro;
+$letra2: (Arial, Helvetica, sans-serif);
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    background-color: $colorClaro;
+    position: relative;
+}
+.body-index{
+    background-image: url(../multimedia/coloniaFaro.jpg);
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+}
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px;
+}
+h3{
+    font-size: 20px;
+    font-family: $letra2;
+    font-weight: bold;
+}
