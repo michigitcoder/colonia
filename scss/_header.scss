@@ -4,6 +4,7 @@ ul{
 }
 .header-bgc{
     background-color: $colorOscuro;
+    padding: 5px;
 }
 
 
@@ -42,9 +43,9 @@ ul{
         &:hover{
             border-radius: 8px;
             color: rgba(255,255,0, 1) ;
-            @media (min-width:801px) {
+            // @media (min-width:801px) {
                 text-shadow: 1px 1px 10px yellow;
-            }
+            // }
             
             
          }
@@ -58,14 +59,19 @@ ul{
     }
     .barraNav{
         position: absolute;
-        top: -500%;
+        top: -800%;
         .header-flex__nav-ul{
             flex-direction: column;
             align-items: center;
             width: 100%;
+            li{
+                padding-top: 15px;
+            }
         }
+
         &:target{
             // display: flex;
+            z-index: 1;
             top: 0;
             margin: 0;
             width: 99%;

@@ -1,0 +1,90 @@
+.banner-gastronomia{
+    @media (min-width:600px){
+        background-image: url(../multimedia/bannerGastronomia.jpg);
+    }
+    @media (max-width: 599px){
+        background-image: url(../multimedia/bannerResto.jpg);
+    }
+    height: 15vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    h2{
+        font-size: 38px;
+        color: $colorClaro;
+        margin: auto;
+        text-shadow: 2px 2px 10px rgb(47, 49, 56);
+    }
+}
+
+.grilla-cartas{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: initial;
+    align-items: stretch;
+}
+
+.cajas-cartas{
+    width: 30%;
+    margin: 10px auto 0 10px;
+    @media (max-width:950px){
+        width: 45%;
+    }
+    @media (max-width:590px){
+        width: 98%;
+    }
+    // background-color: rgba(132, 169, 140,0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    /* border: 2px solid #354f52; */
+    
+    // border-radius: 8px;
+    // max-width: 270px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+    img{
+        width: 100%;
+        height: auto;
+        justify-self: center;
+        // border-bottom-left-radius: 5px;
+        // border-bottom-right-radius: 5px;
+    }
+    .info_gastronomia{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        p{
+            margin-left: 10px;
+        }
+    }
+    // p{
+    //     // max-width: 290px;
+    //     width: 100%;
+    //     text-align: center;
+    //     margin-bottom: 8px;
+    // }
+    // h3{
+    //     width: 100%;
+    //     color: $colorOscuro;
+    //     text-align: center;
+    //     // background-color: $colorOscuro;
+    //     padding: 3px;
+    //     margin-bottom: 0;
+    //     // border-top-left-radius: 5px;
+    //     // border-top-right-radius: 5px;
+    // }
+    .titulo_card_gastronomia{
+        width: 100%;
+        color: rgba($colorOscuro,0.8);
+        margin: 15px 0px;
+        font-weight: 100;
+        font-size: 40px;
+        text-align: center;
+
+    }
+}
+.marginVinieta{
+    margin-left: 20px;
+}

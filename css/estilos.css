@@ -5,7 +5,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 li {
@@ -35,129 +35,13 @@ h2 {
   font-size: 24px;
   font-weight: bold;
   margin: 5px;
+  text-align: center;
 }
 
 h3 {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-}
-
-.cajasSitios {
-  width: 90%;
-  background-color: rgba(132, 169, 140, 0.3);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
-  padding: 5px;
-  border-radius: 8px;
-  margin: 10px;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-
-.cajasSitios img {
-  width: 100%;
-  height: auto;
-}
-
-.cajasSitios h3 {
-  width: 100%;
-  color: #f1faee;
-  background-color: #457b9d;
-  padding: 3px;
-  margin-bottom: 0;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.cajasSitios:hover {
-  -webkit-box-shadow: 1px 1px 10px 1px rgba(69, 123, 157, 0.8);
-          box-shadow: 1px 1px 10px 1px rgba(69, 123, 157, 0.8);
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
-}
-
-.grillaCajasSitios {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  /* ajustar menos columnas en mquery*/
-  justify-items: center;
-}
-
-@media (max-width: 1000px) and (min-width: 671px) {
-  .grillaCajasSitios {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 670px) {
-  .grillaCajasSitios {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-.contenedor-carrusel {
-  width: 90%;
-  margin: 10px auto;
-}
-
-@media (max-width: 670px) {
-  .contenedor-carrusel {
-    margin: 0 auto;
-    width: 98%;
-  }
-}
-
-.carrusel-fondo {
-  padding: 5px;
-  background-color: rgba(241, 250, 238, 0.8);
-  border-radius: 50px;
-  margin: 0 auto;
-}
-
-.carrusel-fondo .carrusel-fondo__etiqueta {
-  color: #457b9d;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-}
-
-@media (max-width: 750px) {
-  .carrusel-fondo .carrusel-fondo__etiqueta {
-    font-size: 18px;
-  }
-}
-
-.carrusel-fondo .carrusel-fondo__parrafo {
-  color: #457b9d;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-}
-
-@media (max-width: 750px) {
-  .carrusel-fondo .carrusel-fondo__parrafo {
-    font-size: 16px;
-  }
-}
-
-.margen-arriba {
-  margin-top: 50px;
 }
 
 ul {
@@ -167,6 +51,7 @@ ul {
 
 .header-bgc {
   background-color: #457b9d;
+  padding: 5px;
 }
 
 .menu-desplegar, .menu-cerrar {
@@ -218,12 +103,7 @@ ul {
 .header-flex .header-flex__nav-ul .header-flex__link:hover {
   border-radius: 8px;
   color: yellow;
-}
-
-@media (min-width: 801px) {
-  .header-flex .header-flex__nav-ul .header-flex__link:hover {
-    text-shadow: 1px 1px 10px yellow;
-  }
+  text-shadow: 1px 1px 10px yellow;
 }
 
 @media (max-width: 800px) {
@@ -232,7 +112,7 @@ ul {
   }
   .barraNav {
     position: absolute;
-    top: -500%;
+    top: -800%;
   }
   .barraNav .header-flex__nav-ul {
     -webkit-box-orient: vertical;
@@ -244,7 +124,11 @@ ul {
             align-items: center;
     width: 100%;
   }
+  .barraNav .header-flex__nav-ul li {
+    padding-top: 15px;
+  }
   .barraNav:target {
+    z-index: 1;
     top: 0;
     margin: 0;
     width: 99%;
@@ -306,6 +190,375 @@ ul {
   }
 }
 
+.cajasSitios {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  border-radius: 1px;
+  margin: 10px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.cajasSitios img {
+  width: 100%;
+  height: auto;
+}
+
+.cajasSitios .titulo_card_sitios {
+  width: 100%;
+  text-shadow: 1px 1px 5px rgba(69, 123, 157, 0.6);
+  color: rgba(69, 123, 157, 0.8);
+  margin: 5px 0px;
+  font-weight: 100;
+  font-size: 20px;
+  text-align: center;
+}
+
+.cajasSitios:hover {
+  -webkit-box-shadow: 1px 1px 10px 1px rgba(69, 123, 157, 0.8);
+          box-shadow: 1px 1px 10px 1px rgba(69, 123, 157, 0.8);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.grillaCajasSitios {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  /* ajustar menos columnas en mquery*/
+  justify-items: center;
+}
+
+@media (max-width: 1000px) and (min-width: 671px) {
+  .grillaCajasSitios {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 670px) {
+  .grillaCajasSitios {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.contenedor-carrusel {
+  width: 90%;
+  margin: 10px auto;
+}
+
+@media (max-width: 670px) {
+  .contenedor-carrusel {
+    margin: 0 auto;
+    width: 98%;
+  }
+}
+
+.carrusel-fondo .carrusel-fondo__etiqueta {
+  display: inline;
+  padding: 5px;
+  border-radius: 4px;
+  color: #457b9d;
+  background-color: rgba(241, 250, 238, 0.6);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 750px) {
+  .carrusel-fondo .carrusel-fondo__etiqueta {
+    font-size: 18px;
+  }
+}
+
+.carrusel-fondo .carrusel-fondo__parrafo {
+  display: inline-block;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 4px;
+  color: #457b9d;
+  background-color: rgba(241, 250, 238, 0.6);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 750px) {
+  .carrusel-fondo .carrusel-fondo__parrafo {
+    font-size: 16px;
+  }
+}
+
+.margen-arriba {
+  margin-top: 50px;
+}
+
+.banner-hotel {
+  background-image: url(../multimedia/almohadas.jpg);
+  height: 15vh;
+  width: 100%;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.banner-hotel h2 {
+  font-size: 38px;
+  color: #f1faee;
+  margin: auto;
+  text-shadow: 2px 2px 10px #2f3138;
+}
+
+.grilla-cartas-Hotel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.cajas-cartas-Hotel {
+  width: 30%;
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  -webkit-transition: -webkit-transform .3s, -webkit-box-shadow .3s;
+  transition: -webkit-transform .3s, -webkit-box-shadow .3s;
+  transition: transform .3s, box-shadow .3s;
+  transition: transform .3s, box-shadow .3s, -webkit-transform .3s, -webkit-box-shadow .3s;
+}
+
+@media (max-width: 950px) {
+  .cajas-cartas-Hotel {
+    width: 45%;
+  }
+}
+
+@media (max-width: 590px) {
+  .cajas-cartas-Hotel {
+    width: 98%;
+  }
+}
+
+.cajas-cartas-Hotel img {
+  width: 100%;
+  height: auto;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.cajas-cartas-Hotel p {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.cajas-cartas-Hotel .titulo_card_hotel {
+  width: 100%;
+  text-shadow: 1px 1px 5px rgba(69, 123, 157, 0.6);
+  color: rgba(69, 123, 157, 0.8);
+  margin: 15px 0px;
+  font-weight: 100;
+  font-size: 40px;
+  text-align: center;
+}
+
+.cajas-cartas-Hotel .lista-Servicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 8px;
+}
+
+.cajas-cartas-Hotel .boton-reservar {
+  background-color: rgba(69, 123, 157, 0.8);
+  color: #f1faee;
+  width: 90%;
+  padding: 5px;
+  margin: 2px auto;
+  border: none;
+  -webkit-transition: all;
+  transition: all;
+}
+
+.cajas-cartas-Hotel .boton-reservar:hover {
+  background-color: #457b9d;
+}
+
+.cajas-cartas-Hotel:hover {
+  -webkit-box-shadow: 1px 1px 10px 1px rgba(69, 123, 157, 0.8);
+          box-shadow: 1px 1px 10px 1px rgba(69, 123, 157, 0.8);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.marginVinieta-Hotel {
+  margin-left: 20px;
+}
+
+.banner-gastronomia {
+  height: 15vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 600px) {
+  .banner-gastronomia {
+    background-image: url(../multimedia/bannerGastronomia.jpg);
+  }
+}
+
+@media (max-width: 599px) {
+  .banner-gastronomia {
+    background-image: url(../multimedia/bannerResto.jpg);
+  }
+}
+
+.banner-gastronomia h2 {
+  font-size: 38px;
+  color: #f1faee;
+  margin: auto;
+  text-shadow: 2px 2px 10px #2f3138;
+}
+
+.grilla-cartas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.cajas-cartas {
+  width: 30%;
+  margin: 10px auto 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5px;
+  /* border: 2px solid #354f52; */
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 950px) {
+  .cajas-cartas {
+    width: 45%;
+  }
+}
+
+@media (max-width: 590px) {
+  .cajas-cartas {
+    width: 98%;
+  }
+}
+
+.cajas-cartas img {
+  width: 100%;
+  height: auto;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.cajas-cartas .info_gastronomia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+}
+
+.cajas-cartas .info_gastronomia p {
+  margin-left: 10px;
+}
+
+.cajas-cartas .titulo_card_gastronomia {
+  width: 100%;
+  color: rgba(69, 123, 157, 0.8);
+  margin: 15px 0px;
+  font-weight: 100;
+  font-size: 40px;
+  text-align: center;
+}
+
+.marginVinieta {
+  margin-left: 20px;
+}
+
+.banner-playa {
+  background-image: url(../multimedia/bannerPlaya.jpg);
+  height: 15vh;
+  width: 100%;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.banner-playa h2 {
+  font-size: 38px;
+  color: #f1faee;
+  margin: auto;
+  text-shadow: 2px 2px 10px #2f3138;
+}
+
 .grilla-playas {
   width: 100%;
   display: -webkit-box;
@@ -323,44 +576,49 @@ ul {
 }
 
 .grilla-playas article {
-  background-color: rgba(132, 169, 140, 0.3);
   width: 45%;
-  min-width: 470px;
-  max-height: 300px;
-  margin: 20px;
+  margin: 20px auto;
   padding: 5px;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
-  border-radius: 8px;
 }
 
 .grilla-playas article div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-}
-
-.grilla-playas article p {
-  text-align: justify;
-  margin: 5px;
-}
-
-.grilla-playas h3 {
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
-  color: #f1faee;
-  background-color: #457b9d;
-  padding: 3px;
-  margin-bottom: 0;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+}
+
+.grilla-playas article div p {
+  text-align: center;
+  margin: 5px auto;
+  width: 90%;
+}
+
+.grilla-playas article div img {
+  width: 100%;
+  height: auto;
+}
+
+.grilla-playas .titulo_card_playas {
+  width: 100%;
+  text-shadow: 1px 1px 5px rgba(69, 123, 157, 0.6);
+  color: rgba(69, 123, 157, 0.8);
+  margin: 5px 0px;
+  font-weight: 100;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .piePagina {
   width: 100%;
+  margin-top: 20px;
   background-color: #354f52;
   opacity: 0.8;
   display: -webkit-box;
@@ -519,87 +777,38 @@ ul {
                 cad2c5  202, 210, 197
 */
 /* PAGINA DE HOTELES Y GASTRONOMIA*/
-.cajas-cartas {
-  width: 30%;
-  margin: 10px auto 0 10px;
-  background-color: rgba(132, 169, 140, 0.3);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 5px;
-  /* border: 2px solid #354f52; */
-  border-radius: 8px;
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
-}
-
-@media (max-width: 950px) {
-  .cajas-cartas {
-    width: 45%;
-  }
-}
-
-@media (max-width: 590px) {
-  .cajas-cartas {
-    width: 98%;
-  }
-}
-
-.cajas-cartas img {
-  width: 100%;
-  height: auto;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.cajas-cartas p {
-  width: 100%;
-}
-
-.cajas-cartas h3 {
-  width: 100%;
-  color: #f1faee;
-  background-color: #457b9d;
-  padding: 3px;
-  margin-bottom: 0;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.marginVinieta {
-  margin-left: 20px;
-}
-
-.grilla-cartas {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  width: 100%;
-  -webkit-box-pack: initial;
-      -ms-flex-pack: initial;
-          justify-content: initial;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-
 /* CIUDAD */
-.contenedor-parrafo {
-  width: 560px;
+.ajustar {
+  width: 80%;
+  margin: 10px auto;
 }
 
-.margen-izq {
-  margin-left: 10px;
+@media (max-width: 800px) {
+  .ajustar {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.contenedor-parrafo {
+  max-width: 560px;
+  width: 95%;
+}
+
+.contenedor-video {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative;
+}
+
+.contenedor-video iframe, .contenedor-video object, .contenedor-video embed {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 /* PLAYAS */

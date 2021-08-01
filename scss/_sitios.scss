@@ -1,27 +1,37 @@
 .cajasSitios{
     width: 90%;
-    background-color: rgba(132, 169, 140,0.3);
+    // background-color: rgba(132, 169, 140,0.3);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
     padding: 5px;
-    border-radius: 8px;
+    border-radius: 1px;
     margin: 10px;
     transition: all .2s;
     img{
         width: 100%;
         height: auto;
     }
-    h3{
+    // h3{
+    //     width: 100%;
+    //     color: $colorClaro;
+    //     background-color: $colorOscuro;
+    //     padding: 3px;
+    //     margin-bottom: 0;
+    //     border-top-left-radius: 5px;
+    //     border-top-right-radius: 5px;
+    // }
+    .titulo_card_sitios{
         width: 100%;
-        color: $colorClaro;
-        background-color: $colorOscuro;
-        padding: 3px;
-        margin-bottom: 0;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
+        text-shadow: 1px 1px 5px rgba($colorOscuro,0.6);
+        color: rgba($colorOscuro,0.8);
+        margin: 5px 0px;
+        font-weight: 100;
+        font-size: 20px;
+        // text-transform: uppercase;
+        text-align: center;
     }
     &:hover{
         box-shadow: 1px 1px 10px 1px rgba($colorOscuro,0.8);
@@ -53,22 +63,33 @@
 }
 
 .carrusel-fondo{
-    padding: 5px;
-    background-color: rgba($colorClaro,0.8);
-    border-radius: 50px;
-    // width: auto;
-    margin: 0 auto;
+    // padding: 5px;
+    // background-color: rgba($colorClaro,0.8);
+    // border-radius: 50px;
+    // // width: auto;
+    // margin: 0 auto;
     .carrusel-fondo__etiqueta{
+        display: inline;
+        padding: 5px;
+        border-radius: 4px;
         color: $colorOscuro;
+        background-color: rgba($colorClaro,0.6);
         font-family: $letra2;
         font-weight:bold;
         @media(max-width:750px){
             font-size: 18px;
         }
-
     }
+    // .margin-bajo{
+    //     margin-bottom: 10px;
+    // }
     .carrusel-fondo__parrafo{
+        display: inline-block;
+        padding: 5px;
+        margin-top: 10px;
+        border-radius: 4px;
         color:$colorOscuro;
+        background-color: rgba($colorClaro,0.6);
         font-family: $letra2;
         font-weight:bold;
         @media(max-width:750px){
@@ -77,14 +98,6 @@
     }
 }
 
-// .listaPaseos{
-//     padding: 10px;
-//     background-color: rgba(132, 169, 140,0.3);
-//     list-style-type: lower-roman;
-//     li{
-//         margin-left: 40px;
-//     }
-// }
 
 .margen-arriba{
     margin-top: 50px;
