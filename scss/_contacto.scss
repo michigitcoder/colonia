@@ -1,0 +1,43 @@
+.labelLarga{
+    display: inline;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    padding: 10px;
+    border: 2px solid #354f52;  
+    border-radius: 4px;  
+    width: 320px;
+    @media (max-width:400px){
+        width:200px;
+        border:none;
+    }
+    label{
+        display: inline-block;
+        width: 85px;
+    }
+    textarea {
+        width: 285px;
+        resize: none;
+        @media (max-width:400px){
+            width:200px;
+        }
+    }
+    .botones{
+        margin: 10px auto;
+        .boton-form{
+            background-color: rgba($colorOscuro,0.8);
+            color: $colorClaro;
+            padding: 5px;
+            border: none;
+            transition: all;
+            &:hover{
+                background-color: $colorOscuro;
+            }
+        }
+    }
+} 
+form *{
+    font-size: 16px;
+}

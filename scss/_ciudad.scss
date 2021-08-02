@@ -1,0 +1,31 @@
+.ajustar{
+    width: 80%;
+    margin: 10px auto;
+    @media (max-width:800px){
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.contenedor-parrafo{
+    max-width: 560px;
+    margin-left: 10px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+    width: 90%;
+}
+
+.contenedor-video {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	position: relative;
+	}
+.contenedor-video iframe, .contenedor-video object, .contenedor-video embed {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	}

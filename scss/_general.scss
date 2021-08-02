@@ -6,12 +6,9 @@
     font-size: 16px;  
 }
 
-// $colorClaro: #cad2c5;
+
 $colorClaro: #f1faee;
-// $colorClaro: #a5a58d;
-// $colorOscuro: #2f3e46;
 $colorOscuro: #457b9d;
-// $colorOscuro: #ffe8d6;
 $colorBotones: $colorOscuro;
 $letra2: (Arial, Helvetica, sans-serif);
 
@@ -29,13 +26,9 @@ body{
 }
 .body-index{
     background-image: url(../multimedia/coloniaFaro.jpg);
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
 }
 .contenedor {
     max-width: 1100px;
-    // width: 100%;
     margin: 0 auto;
 }
 

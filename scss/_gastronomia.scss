@@ -35,21 +35,19 @@
     @media (max-width:590px){
         width: 98%;
     }
-    // background-color: rgba(132, 169, 140,0.3);
     display: flex;
     flex-direction: column;
     padding: 5px;
-    /* border: 2px solid #354f52; */
-    
-    // border-radius: 8px;
-    // max-width: 270px;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+    transition: all .3s;
+    &:hover{
+        box-shadow: 1px 1px 10px 1px rgba($colorOscuro,0.8);
+        transform: translateY(-3px);
+    } 
     img{
         width: 100%;
         height: auto;
         justify-self: center;
-        // border-bottom-left-radius: 5px;
-        // border-bottom-right-radius: 5px;
     }
     .info_gastronomia{
         display: flex;
@@ -59,22 +57,6 @@
             margin-left: 10px;
         }
     }
-    // p{
-    //     // max-width: 290px;
-    //     width: 100%;
-    //     text-align: center;
-    //     margin-bottom: 8px;
-    // }
-    // h3{
-    //     width: 100%;
-    //     color: $colorOscuro;
-    //     text-align: center;
-    //     // background-color: $colorOscuro;
-    //     padding: 3px;
-    //     margin-bottom: 0;
-    //     // border-top-left-radius: 5px;
-    //     // border-top-right-radius: 5px;
-    // }
     .titulo_card_gastronomia{
         width: 100%;
         color: rgba($colorOscuro,0.8);
@@ -82,9 +64,5 @@
         font-weight: 100;
         font-size: 40px;
         text-align: center;
-
     }
-}
-.marginVinieta{
-    margin-left: 20px;
 }

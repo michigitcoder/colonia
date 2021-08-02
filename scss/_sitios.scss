@@ -62,39 +62,30 @@
     }
 }
 
-.carrusel-fondo{
-    // padding: 5px;
-    // background-color: rgba($colorClaro,0.8);
-    // border-radius: 50px;
-    // // width: auto;
-    // margin: 0 auto;
-    .carrusel-fondo__etiqueta{
-        display: inline;
-        padding: 5px;
-        border-radius: 4px;
-        color: $colorOscuro;
-        background-color: rgba($colorClaro,0.6);
-        font-family: $letra2;
-        font-weight:bold;
-        @media(max-width:750px){
-            font-size: 18px;
-        }
+
+.carrusel-fondo__etiqueta{
+    display: inline;
+    padding: 5px;
+    border-radius: 4px;
+    color: $colorOscuro;
+    background-color: rgba($colorClaro,0.6);
+    font-family: $letra2;
+    font-weight:bold;
+    @media(max-width:750px){
+        font-size: 18px;
     }
-    // .margin-bajo{
-    //     margin-bottom: 10px;
-    // }
-    .carrusel-fondo__parrafo{
-        display: inline-block;
-        padding: 5px;
-        margin-top: 10px;
-        border-radius: 4px;
-        color:$colorOscuro;
-        background-color: rgba($colorClaro,0.6);
-        font-family: $letra2;
-        font-weight:bold;
-        @media(max-width:750px){
-            font-size: 16px;
-        }
+}
+.carrusel-fondo__parrafo{
+    display: inline-block;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 4px;
+    color:$colorOscuro;
+    background-color: rgba($colorClaro,0.6);
+    font-family: $letra2;
+    font-weight:bold;
+    @media(max-width:750px){
+        font-size: 16px;
     }
 }
 
