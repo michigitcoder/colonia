@@ -1,6 +1,5 @@
 .cajasSitios{
     width: 90%;
-    // background-color: rgba(132, 169, 140,0.3);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -14,15 +13,6 @@
         width: 100%;
         height: auto;
     }
-    // h3{
-    //     width: 100%;
-    //     color: $colorClaro;
-    //     background-color: $colorOscuro;
-    //     padding: 3px;
-    //     margin-bottom: 0;
-    //     border-top-left-radius: 5px;
-    //     border-top-right-radius: 5px;
-    // }
     .titulo_card_sitios{
         width: 100%;
         text-shadow: 1px 1px 5px rgba($colorOscuro,0.6);
@@ -30,7 +20,6 @@
         margin: 5px 0px;
         font-weight: 100;
         font-size: 20px;
-        // text-transform: uppercase;
         text-align: center;
     }
     &:hover{

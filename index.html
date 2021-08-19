@@ -25,7 +25,7 @@
                         <li><a class="header-flex__link" href="./paginas/playas.html"> Playas</a></li>
                         <li><a class="header-flex__link" href="./paginas/ciudad.html"> Ciudad</a></li>
                         <li><a class="header-flex__link" href="./paginas/sitios.html"> Sitios</a></li>
-                        <li><a class="header-flex__link" href="./paginas/contacto.html"> Contacto</a></li>
+                        <li><a class="header-flex__link" href="./index.html"> Inicio</a></li>
                         <li><a class="menu-cerrar" href="#">X</a></li>
                     </ul>
                 </nav>
@@ -34,8 +34,65 @@
         <main class="claseMain">
             <p class="claseMain__p">Colonia del Sacramento <strong class="claseMain__strong">ofrece la paz</strong> que usted busca</p>
         </main>
+    </div>
 
-        <footer class="piePagina piePagina--absoluta">
+    <div class="contenedor">
+    <article class="boxVariasFotos">
+        <div class="imagen">
+                <img src="./multimedia/habitacion.jpg" alt="habitacion hotel">
+                <div class="link_div"><a class="link" href="./paginas/hotel.html">Hoteles</a></div>
+        </div>
+        <div class="imagen">
+            <img src="./multimedia/gastronomia.jpg" alt="gastronomia">  
+            <div class="link_div"><a class="link" href="./paginas/gastronomia.html">Gastronomia</a></div>
+        </div>
+        <div class="imagen">
+            <img src="./multimedia/playa.jpg" alt="playas colonia">
+            <div class="link_div"><a class="link" href="./paginas/playas.html">Playas</a></div>
+        </div>
+        <div class="imagen">
+            <img src="./multimedia/ciudad.jpg" alt="ciudad colonia">
+            <div class="link_div"><a class="link" href="./paginas/ciudad.html">Ciudad</a></div>
+        </div><div class="imagen">
+            <img src="./multimedia/sitios.jpg" alt="sitios de colonia">
+            <div class="link_div"><a class="link" href="./paginas/sitios.html">Sitios</a></div>
+        </div>
+        </article>
+    </div>
+    <div class="contenedor">
+        <h2 class="tituloConsulta">Consultas</h2>
+        <form class="formulario" action="#">
+                <div class="casillaForm">
+                    <input type="text" class="casillaForm__espacio" id="nombre" name="nombre" placeholder="Nombre">
+                    <input type="text" class="casillaForm__espacio" id="apellido" name="apellido" placeholder="Apellido">
+                    <input type="email" class="casillaForm__espacio" id="mail" name="mail" placeholder="email">
+                    <input type="tel" class="casillaForm__espacio" id="nroTelefono" name="nroTelefono" placeholder="Telefono">
+                </div>
+                <div class="casillaCiudadania">
+                    <label class="casillaCiudadania__espacio casillaCiudadania__espacio-derecha" for="ciudadania">Ciudadania:</label>
+                    <select class="casillaCiudadania__espacio casillaCiudadania__espacio-casilla" name="ciudadania" id="ciudadania">
+                        <option value="uruguaya">Uruguaya</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="brasilera">Brasilera</option>
+                        <option value="otra">Otra</option>
+                    </select>
+                </div>
+                <div class="casillaCheck">
+                    <label class="casillaCheck__label"  for="condiciones">Deseo recibir ofertas</label>
+                    <input type="checkbox" id="condiciones" name="condiciones" value = 1 >
+                </div>
+                <div class="casillaArea">
+                    <textarea class="casillaArea__texto" name="consulta" id="consulta"  rows="10" placeholder="Ingresa su consulta"></textarea>
+                </div>
+                    <div class="botones">
+                        <input class="botonForm" type="reset" value="Cancelar">
+                        <input class="botonForm" type= "submit" value="Enviar">
+                    </div>
+                
+        </form>
+    </div>
+    <footer class="fondo_footer">
+        <div class="contenedor piePagina">
             <article>
                 <div>Camara gastronomica</div>
                 <div>mail: email@gastronomica.com.uy</div>
@@ -49,7 +106,7 @@
                 <div>Instagram: @camara_hotelera</div>
                 <div>Telefono: (+598) 452-89339</div>
             </article>
-        </footer>
-    </div>
+        </div>
+    </footer>
     </body>
 </html>

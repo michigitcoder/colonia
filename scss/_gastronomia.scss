@@ -1,10 +1,5 @@
 .banner-gastronomia{
-    @media (min-width:600px){
-        background-image: url(../multimedia/bannerGastronomia.jpg);
-    }
-    @media (max-width: 599px){
-        background-image: url(../multimedia/bannerResto.jpg);
-    }
+    background-image: url(../multimedia/bannerGastronomia.jpg);
     height: 15vh;
     width: 100%;
     background-size: cover;
@@ -34,6 +29,7 @@
     }
     @media (max-width:590px){
         width: 98%;
+        margin: 5px auto;
     }
     display: flex;
     flex-direction: column;
